@@ -2,16 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export default async function handler(req, res) {
-  // CORS 헤더 추가
-  res.setHeader('Access-Control-Allow-Origin', 'https://user-test-ten.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  
-  // OPTIONS 요청일 경우, preflight 응답을 처리
-  if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
-  }
+
 
   // POST 요청 처리
   if (req.method === "POST") {
