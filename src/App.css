@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'HSBombaram';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeongnimsaji-R';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Jeongnimsaji-R.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  background-color: #EFEFEB;
+}
+
+.App {
+  width: 100%;
+  height:100vh;
+  background-color: #EFEFEB;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.memory{
+  margin: 0 auto;
+  width: 560px;
+}
+
+#title{
+  text-align: center;
+  font-family: 'HSBombaram';
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+#input{
+  width: 480px;
+  height: 360px;
+
+  border: solid 1px #222222;
+  border-radius: 12px;
+  background-color: #EFEFEB;
+  
+  margin-top: 40px;
+  padding: 40px 40px;
+
+  font-family: 'Jeongnimsaji-R';
+  font-weight: bolder;
+  font-size: 2rem;
+
+}
+
+#input::placeholder{color: #BBBBBB;}
+
+#send-btn{
+  width: 560px;
+  height: 80px;
+
+  margin-top: 40px;
+
+  background-color: #222222;
+  border-radius: 12px;
+  border: solid 1px #222222;
+
+  font-size: 1.6rem;
+  font-family: 'Jeongnimsaji-R';
+  font-weight: lighter;
+  color: #EFEFEB;
+}
